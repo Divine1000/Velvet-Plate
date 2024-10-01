@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images\logo 3.jpg" style="width:100px;height:100px;border-radius:50%" alt="Logo">
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Restaurant</title>
+    <style>
+        body {
+            font-family: 'times new roman';
+            margin: 0;
+            padding: 0;
+            
+        }
+        /* Side Navigation Bar */
+        .sidenav {
+            height: 100vh;
+            width: 100px;
+            background-color: #FFDAB9;
+            padding: 20px;
+            position: fixed;
+        }
+        .sidenav a {
+            padding: 15px 10px;
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+        .sidenav a:hover {
+            color: orange;
+        }
+        /* Main content */
+        .main-content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+		.main-content h1{
+		    text-align: center;
+		}
+        /* Footer */
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        }
+        /* Form Styles */
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+        }
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+			margin-bottom: 20px;
+            background-color:  #FFDAB9;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Side Navigation -->
+    <div class="sidenav">
+         <img src="images\logo 3.jpg" style="width:100px;height:100px;border-radius:50%" alt="Logo">
+				<br><br>
+                <a href="index.html">Home</a>
+                <a href="about me.html">About Us</a>
+                <a href="terms  for services.html">Services</a>
+                <a href="contact us.html">Contact</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Fill out the form below and we'll get back to you as soon as possible.</p>
+
+        <div class="contact-form">
+            <form action="/submit-contact-form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Velvet Plate Restaurant</p>
+            <a href="terms  for services.html">Terms of Service</a>
+            <a href="contact us.html">Contact</a>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images\logo 3.jpg" style="width:100px;height:100px;border-radius:50%" alt="Logo">
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steaks</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'times new roman';
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .main-content {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            width: 150px;
+            position: fixed;
+            height: 100%;
+            background-color: #FFDAB9;
+            color: black;
+            padding: 15px;
+        }
+        .sidebar a {
+            color: black;
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .sidebar a:hover {
+            color: orange;
+        }
+        .main-body {
+            margin-left: 200px; /* Leaves space for the sidebar */
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-body h1{
+            text-align: center;
+            padding: 50px;
+            font-size: 50px;
+        }
+        .image-section {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .image-section img {
+            width: 100%;
+            max-width: 300px;
+            margin-right: 20px;
+        }
+        .image-details {
+            max-width: 400px;
+        }
+        .image-details h3 {
+            margin-bottom: 10px;
+            color: black;
+            background-color: #FFDAB9; 
+            padding: 20px;
+            border-radius: 30px;
+        }
+        .image-details p {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .contact-btn {
+            background-color: skyblue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .contact-btn:hover {
+            background-color: orange;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            color: white;
+            background-color: black;
+            margin-top: 20px;
+        }
+        footer a {
+            color: white;
+            padding: 5px 15px;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="sidebar">
+                <img src="images\logo 3.jpg" style="width:100px;height:100px;border-radius:50%" alt="Logo">
+                <br><br>
+                <a href="index.html">Home</a>
+                <a href="about me.html">About Us</a>
+                <a href="terms  for services.html">Services</a>
+                <a href="contact us.html">Contact</a>
+            </div>
+            <div class="main-body">
+                <h1>Our Steak Recipes</h1>
+
+                <!-- First Image Section -->
+                <div class="image-section">
+                    <img src="images\steak\1.jpg" alt="Placeholder Image 1">
+                    <div class="image-details">
+                        <h3>Ribeye Steak</h3>
+                        <p><strong>Ingredients: </strong>Rib section of the cow, well-marbled with fat, making it juicy and flavorful.</p>
+						<p><strong>Price :</strong>$25 - $50 (per 8-12 oz steak).</p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+
+                <!-- Second Image Section -->
+                <div class="image-section">
+                    <img src="images\steak\2.jpg" alt="Placeholder Image 2">
+                    <div class="image-details">
+                        <h3>Filet Mignon></h3>
+                        <p><strong>Ingredients: </strong>Tenderloin, very tender with a mild flavor and less fat.</p>
+						<p><strong>Price :</strong> $30 - $60 (per 6-8 oz steak). </p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+
+                <!-- Third Image Section -->
+                <div class="image-section">
+                    <img src="images\steak\3.jpg"  alt="Placeholder Image 3">
+                    <div class="image-details">
+                        <h3>New York Strip</h3>
+                        <p><strong>Ingredients: </strong>From the short loin, firmer texture with a rich beefy flavor.
+</p>
+						<p><strong>Price :</strong>$20 - $45 (per 10-14 oz steak).</p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+				
+				<div class="image-section">
+                    <img src="images\steak\4.jpg"  alt="Placeholder Image 1">
+                    <div class="image-details">
+                        <h3>T-Bone Steak</h3>
+                        <p><strong>Ingredients: </strong>From the short loin, contains both a strip steak and a small portion of tenderloin separated by a T-shaped bone.</p>
+						<p><strong>Price :</strong>$30 - $55 (per 16-20 oz steak).
+</p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+
+                <!-- Second Image Section -->
+                <div class="image-section">
+                    <img src="images\steak\5.jpg"  alt="Placeholder Image 2">
+                    <div class="image-details">
+                        <h3>Tomahawk Steak </h3>
+                        <p><strong>Ingredients: </strong>A large ribeye with the rib bone still attached.</p>
+						<p><strong>Price :</strong>$75 - $120 (per 30-40 oz steak).</p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer>
+            <a href="terms  for services.html">Terms of Service</a>
+            <a href="contact us.html">Contact</a>
+        </footer>
+    </div>
+</body>
+</html>

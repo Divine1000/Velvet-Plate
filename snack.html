@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images\logo 3.jpg" style="width:100px;height:100px;border-radius:50%" alt="Logo">
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sancks</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'times new roman';
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .main-content {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            width: 150px;
+            position: fixed;
+            height: 100%;
+            background-color: #FFDAB9;
+            color: black;
+            padding: 15px;
+        }
+        .sidebar a {
+            color: black;
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .sidebar a:hover {
+            color: orange;
+        }
+        .main-body {
+            margin-left: 200px; /* Leaves space for the sidebar */
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-body h1{
+            text-align: center;
+            padding: 50px;
+            font-size: 50px;
+        }
+        .image-section {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .image-section img {
+            width: 100%;
+            max-width: 300px;
+            margin-right: 20px;
+        }
+        .image-details {
+            max-width: 400px;
+        }
+        .image-details h3 {
+            margin-bottom: 10px;
+            color: black;
+            background-color: #FFDAB9; 
+            padding: 20px;
+            border-radius: 30px;
+        }
+        .image-details p {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .contact-btn {
+            background-color: skyblue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .contact-btn:hover {
+            background-color: orange;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            color: white;
+            background-color: black;
+            margin-top: 20px;
+        }
+        footer a {
+            color: white;
+            padding: 5px 15px;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="sidebar">
+                <img src="images\logo 3.jpg" style="width:100px;height:100px;border-radius:50%" alt="Logo">
+                <br><br>
+                <a href="index.html">Home</a>
+                <a href="about me.html">About Us</a>
+                <a href="terms  for services.html">Services</a>
+                <a href="contact us.html">Contact</a>
+            </div>
+            <div class="main-body">
+                <h1>Our Snacks</h1>
+
+                <!-- First Image Section -->
+                <div class="image-section">
+                    <img src="images\snacks\1.jpg"alt="Placeholder Image 1">
+                    <div class="image-details">
+                        <h3> Potato Chips</h3>
+                        <p><strong>Ingredients: </strong>Thinly sliced fried potatoes, salt, vegetable oil. Often flavored with seasonings such as barbecue, sour cream, and onion.</p>
+						<p><strong>Price :</strong>$1.50 - $3.00 per 150g bag.</p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+
+                <!-- Second Image Section -->
+                <div class="image-section">
+                    <img src="images\snacks\2.jpg" alt="Placeholder Image 2">
+                    <div class="image-details">
+                        <h3>Popcorn</h3>
+                        <p><strong>Ingredients: </strong>Popped corn kernels, butter, salt, and sometimes caramel or cheese flavorings.</p>
+						<p><strong>Price :</strong>$1.50 - $3.00 per 100g bag. </p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+
+                <!-- Third Image Section -->
+                <div class="image-section">
+                    <img src="images\snacks\3.jpg" alt="Placeholder Image 3">
+                    <div class="image-details">
+                        <h3> Fruit Snacks</h3>
+                        <p><strong>Ingredients: </strong>Gelatin, fruit juice concentrates, sugars, and artificial flavors.</p>
+						<p><strong>Price :</strong>$0.75 - $2.00 per pack.</p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+				
+				<div class="image-section">
+                    <img src="images\snacks\4.jpg" alt="Placeholder Image 1">
+                    <div class="image-details">
+                        <h3> Pretzels</h3>
+                        <p><strong>Ingredients: </strong>Flour, yeast, salt, water, and occasionally seeds or salt coatings.</p>
+						<p><strong>Price :</strong>$1.00 - $3.00 per 100g.</p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+
+                <!-- Second Image Section -->
+                <div class="image-section">
+                    <img src="images\snacks\5.jpg" alt="Placeholder Image 2">
+                    <div class="image-details">
+                        <h3> Rice Cakes</h3>
+                        <p><strong>Ingredients: </strong>Puffed rice, salt, sometimes with additional toppings like cheese or chocolate.</p>
+						<p><strong>Price :</strong>$1.50 - $3.00 per 100g.</p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer>
+            <a href="terms  for services.html">Terms of Service</a>
+            <a href="contact us.html">Contact</a>
+        </footer>
+    </div>
+</body>
+</html>

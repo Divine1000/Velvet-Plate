@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images\logo 3.jpg" style="width:100px;height:100px;border-radius:50%" alt="Logo">
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Dishes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'times new roman';
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .main-content {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            width: 150px;
+            position: fixed;
+            height: 100%;
+            background-color: #FFDAB9;
+            color: black;
+            padding: 15px;
+        }
+        .sidebar a {
+            color: black;
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .sidebar a:hover {
+            color: orange;
+        }
+        .main-body {
+            margin-left: 200px; /* Leaves space for the sidebar */
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-body h1{
+            text-align: center;
+            padding: 50px;
+            font-size: 50px;
+        }
+        .image-section {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .image-section img {
+            width: 100%;
+            max-width: 300px;
+            margin-right: 20px;
+        }
+        .image-details {
+            max-width: 400px;
+        }
+        .image-details h3 {
+            margin-bottom: 10px;
+            color: black;
+            background-color: #FFDAB9; 
+            padding: 20px;
+            border-radius: 30px;
+        }
+        .image-details p {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .contact-btn {
+            background-color: skyblue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .contact-btn:hover {
+            background-color: orange;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            color: white;
+            background-color: black;
+            margin-top: 20px;
+        }
+        footer a {
+            color: white;
+            padding: 5px 15px;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="sidebar">
+                <img src="images\logo 3.jpg" style="width:100px;height:100px;border-radius:50%" alt="Logo">
+                <br><br>
+                <a href="index.html">Home</a>
+                <a href="about me.html">About Us</a>
+                <a href="terms  for services.html">Services</a>
+                <a href="contact us.html">Contact</a>
+            </div>
+            <div class="main-body">
+                <h1>Our Chicken Recipes</h1>
+
+                <!-- First Image Section -->
+                <div class="image-section">
+                    <img src="images\chicken\1.jpg" alt="Placeholder Image 1">
+                    <div class="image-details">
+                        <h3>Grilled Chicken</h3>
+                        <p><strong>Ingredients: </strong>Chicken breast, olive oil, lemon juice, garlic, herbs (like thyme or rosemary), salt, and pepper.</p>
+						<p><strong>Price :</strong> $10 - $15</p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+
+                <!-- Second Image Section -->
+                <div class="image-section">
+                    <img src="images\chicken\2.jpg" alt="Placeholder Image 2">
+                    <div class="image-details">
+                        <h3>Chicken Alfredo</h3>
+                        <p><strong>Ingredients: </strong> Grilled chicken, fettuccine pasta, creamy Alfredo sauce (butter, heavy cream, parmesan cheese), garlic, parsley.</p>
+						<p><strong>Price :</strong>$12 - $18 </p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+
+                <!-- Third Image Section -->
+                <div class="image-section">
+                    <img src="images\chicken\3.jpg" alt="Placeholder Image 3">
+                    <div class="image-details">
+                        <h3>Chicken Parmesan</h3>
+                        <p><strong>Ingredients: </strong>Breaded chicken breast, marinara sauce, mozzarella cheese, parmesan cheese, served with spaghetti or salad.</p>
+						<p><strong>Price :</strong>$13 - $20</p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+				
+				<div class="image-section">
+                    <img src="images\chicken\4.jpg" alt="Placeholder Image 1">
+                    <div class="image-details">
+                        <h3>Chicken Tikka Masala</h3>
+                        <p><strong>Ingredients: </strong>Marinated chicken chunks (yogurt, ginger, garlic, garam masala), creamy tomato-based sauce (spices, cream, and butter), served with naan or rice.</p>
+						<p><strong>Price :</strong> $14 - $22</p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+
+                <!-- Second Image Section -->
+                <div class="image-section">
+                    <img src="images\chicken\5.jpg" alt="Placeholder Image 2">
+                    <div class="image-details">
+                        <h3> Chicken Caesar Salad </h3>
+                        <p><strong>Ingredients: </strong>Grilled or roasted chicken breast, romaine lettuce, Caesar dressing, parmesan cheese, croutons.</p>
+						<p><strong>Price :</strong>$9 - $14</p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+
+                <!-- Third Image Section -->
+                <div class="image-section">
+                    <img src="images\chicken\6.jpg" alt="Placeholder Image 3">
+                    <div class="image-details">
+                        <h3>Buffalo Chicken Wings</h3>
+                        <p><strong>Ingredients: </strong>Fried or baked chicken wings, buffalo sauce (hot sauce, butter), blue cheese or ranch dressing, celery sticks.</p>
+						<p><strong>Price :</strong>$8 - $16 (for 6-12 wings)</p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer>
+            <a href="terms  for services.html">Terms of Service</a>
+            <a href="contact us.html">Contact</a>
+        </footer>
+    </div>
+</body>
+</html>

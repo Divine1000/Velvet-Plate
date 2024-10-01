@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images\logo 3.jpg" style="width:100px;height:100px;border-radius:50%" alt="Logo">
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'times new roman';
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .main-content {
+            display: flex;
+            
+        }
+        .sidebar {
+            width: 150px;
+            position: fixed;
+            height: 100%;
+            background-color: #FFDAB9;
+            color: black;
+            padding: 15px;
+        }
+        .sidebar a {
+            color: black;
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .sidebar a:hover {
+            color: orange;
+        }
+        .main-body {
+            margin-left: 200px; /* Leaves space for the sidebar */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-body h1{
+            text-align: center;
+            padding: 50px;
+            font-size: 50px;
+        }
+        .image-section {
+            display: flex; 
+            margin-bottom: 20px;
+        }
+        .image-section img {
+            max-width: 300px;
+            margin-right: 20px;
+        }
+        .image-details {
+            max-width: 400px;
+        }
+        .image-details h3 {
+            margin-bottom: 10px;
+            color: black;
+            background-color: #FFDAB9; 
+            padding: 20px;
+            border-radius: 30px;
+        }
+        .image-details p {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .contact-btn {
+            background-color: skyblue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .contact-btn:hover {
+            background-color: orange;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            color: white;
+            background-color: black;
+            margin-top: 20px;
+        }
+        footer a {
+            color: white;
+            padding: 5px 15px;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="sidebar">
+                <img src="images\logo 3.jpg" style="width:100px;height:100px;border-radius:50%" alt="Logo">
+                <br><br>
+                <a href="index.html">Home</a>
+                <a href="about me.html">About Us</a>
+                <a href="terms  for services.html">Services</a>
+                <a href="contact us.html">Contact</a>
+            </div>
+            <div class="main-body">
+                <h1>Our Pizza Recipes</h1>
+
+                <!-- First Image Section -->
+                <div class="image-section">
+                    <img src="images\pizza\1.jpg" alt="Placeholder Image 1">
+                    <div class="image-details">
+                        <h3>Margherita Pizza</h3>
+                        <p><strong>Ingredients: </strong>Tomato sauce, mozzarella cheese, fresh basil, olive oil, salt.</p>
+						<p><strong>Price :</strong>$10 - $12</p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+
+                <!-- Second Image Section -->
+                <div class="image-section">
+                    <img src="images\pizza\2.jpg" alt="Placeholder Image 2">
+                    <div class="image-details">
+                        <h3>Pepperoni Pizza</h3>
+                        <p><strong>Ingredients: </strong>Tomato sauce, mozzarella cheese, pepperoni slices.</p>
+						<p><strong>Price :</strong> $12 - $15</p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+
+                <!-- Third Image Section -->
+                <div class="image-section">
+                    <img src="images\pizza\3.jpg" alt="Placeholder Image 3">
+                    <div class="image-details">
+                        <h3>BBQ Chicken Pizza</h3>
+                        <p><strong>Ingredients: </strong>BBQ sauce, grilled chicken, mozzarella cheese, red onions, cilantro.</p>
+						<p><strong>Price :</strong>Price: $13 - $16</p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+				
+				<div class="image-section">
+                    <img src="images\pizza\4.jpg" alt="Placeholder Image 1">
+                    <div class="image-details">
+                        <h3>Vegetarian Pizza</h3>
+                        <p><strong>Ingredients: </strong>Tomato sauce, mozzarella cheese, mushrooms, bell peppers, onions, black olives, spinach.</p>
+						<p><strong>Price :</strong>Price: $11 - $14</p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+
+                <!-- Second Image Section -->
+                <div class="image-section">
+                    <img src="images\pizza\5.jpg" alt="Placeholder Image 2">
+                    <div class="image-details">
+                        <h3> Hawaiian Pizza</h3>
+                        <p><strong>Ingredients: </strong>Tomato sauce, mozzarella cheese, ham, pineapple.</p>
+						<p><strong>Price :</strong>Price: $12 - $14</p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+
+                <!-- Third Image Section -->
+                <div class="image-section">
+                    <img src="images\pizza\6.jpg" alt="Placeholder Image 3">
+                    <div class="image-details">
+                        <h3>Meat Lover’s Pizza</h3>
+                        <p><strong>Ingredients: </strong>Tomato sauce, mozzarella cheese, pepperoni, sausage, ham, bacon, ground beef.</p>
+						<p><strong>Price :</strong>Price: $14 - $18</p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+				
+				<div class="image-section">
+                    <img src="images\pizza\7.jpg" alt="Placeholder Image 1">
+                    <div class="image-details">
+                        <h3>Buffalo Chicken Pizza</h3>
+                        <p><strong>Ingredients: </strong>Buffalo sauce, grilled chicken, mozzarella cheese, blue cheese, ranch dressing drizzle.</p>
+						<p><strong>Price :</strong>Price: $13 - $17</p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+
+                <!-- Second Image Section -->
+                <div class="image-section">
+                    <img src="images\pizza\8.jpg" alt="Placeholder Image 2">
+                    <div class="image-details">
+                        <h3> Four Cheese Pizza</h3>
+                        <p><strong>Ingredients: </strong>Mozzarella, parmesan, gorgonzola, provolone cheese, olive oil.</p>
+						<p><strong>Price :</strong>Price: $12 - $15</p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+
+                <!-- Third Image Section -->
+                <div class="image-section">
+                    <img src="images\pizza\9.jpg" alt="Placeholder Image 3">
+                    <div class="image-details">
+                        <h3>. Mexican Pizza</h3>
+                        <p><strong>Ingredients: </strong>Salsa sauce, mozzarella cheese, ground beef, jalapeños, onions, tomatoes, cilantro.</p>
+						<p><strong>Price :</strong>Price: $14 - $18</p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div><div class="image-section">
+                    <img src="images\pizza\10.jpg" alt="Placeholder Image 1">
+                    <div class="image-details">
+                        <h3>Pesto Pizza</h3>
+                        <p><strong>Ingredients: </strong>Pesto sauce, mozzarella cheese, cherry tomatoes, spinach, ricotta.</p>
+						<p><strong>Price :</strong> $13 - $16</p>
+                        <a href="contact us.html"><button class="contact-btn">Contact</button></a>
+                    </div>
+                </div>
+
+                
+
+                
+
+            </div>
+        </div>
+        <footer>
+            <a href="terms  for services.html">Terms of Service</a>
+            <a href="contact us.html">Contact</a>
+        </footer>
+    </div>
+</body>
+</html>
